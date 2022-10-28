@@ -124,7 +124,21 @@ public class SBinTre<T> {
         if (tom()){
         }
         else {
+            if (inneholder(verdi)) {
+                Node<T> p = rot;
+                while (p != null) {
+                    int slign = comp.compare(verdi, p.verdi);
+                    if (slign == 0) {
+                        p = p.høyre;
+                        teller++;
+                    } else if (slign > 0) {
+                        p = p.høyre;
+                    } else {
+                        p = p.venstre;
+                    }
+                }
 
+            }
         }
         return teller;
 
