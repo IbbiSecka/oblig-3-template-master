@@ -120,7 +120,8 @@ public class SBinTre<T> {
         throw new UnsupportedOperationException("Ikke kodet ennå!");
     }
 
-    public int antall(T verdi) {int teller = 0 ;
+    public int antall(T verdi) {
+        int teller = 0 ;
         if (tom()){
         }
         else {
